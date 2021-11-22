@@ -1,0 +1,11 @@
+<%# <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' /> %>
+
+<%= @showflat["name"]%>
+<img src="<%=@showflat["imageUrl"]%>" alt="image">
+<%= image_tag %>
+<%= @showflat["price"] %>
+<%# <div id="map" style="height: 300px; width: 600px"></div> %>
+<img id="map" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/<%=@showflat["lng"]%>,<%=@showflat["lat"]%>,10.45,0,0/600x1000?access_token=pk.eyJ1IjoiaHVpbGluZzk3IiwiYSI6ImNrdncycHB3bzQ1eDAybnFnaTJuaGZsYXoifQ.cSCV-TihvxkzBnUSWpYRYQ'>
+<%# new mapboxgl.Marker()
+  .setLngLat([ -0.077, 51.533 ])
+  .addTo(map); %>
